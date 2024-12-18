@@ -31,7 +31,7 @@ void push(Stack* s, int value) {
 int pop(Stack* s) {
     if (isEmpty(s)) {
         printf("Stack Underflow! Cannot pop from the stack.\n");
-        return -1; // Return -1 to indicate error
+        return -1; 
     }
     return s->data[s->top--];
 }
@@ -39,7 +39,7 @@ int pop(Stack* s) {
 int peek(Stack* s) {
     if (isEmpty(s)) {
         printf("Stack is empty! Cannot peek.\n");
-        return -1; // Return -1 to indicate error
+        return -1; 
     }
     return s->data[s->top];
 }
