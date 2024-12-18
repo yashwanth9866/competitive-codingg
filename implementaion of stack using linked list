@@ -31,7 +31,7 @@ void push(Node** top, int data) {
 int pop(Node** top) {
     if (isEmpty(*top)) {
         printf("Stack Underflow! Cannot pop from the stack.\n");
-        return -1; // Return -1 to indicate error
+        return -1;
     }
     Node* temp = *top;
     int poppedData = temp->data;
